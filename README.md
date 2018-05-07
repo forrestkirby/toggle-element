@@ -1,6 +1,7 @@
 # Toggle Element
 
 A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [toggle component](https://getuikit.com/docs/toggle)
+
 Copyright (C) 2018 [forrestkirby](https://github.com/forrestkirby)
 
 This program is free software: you can redistribute it and/or modify
