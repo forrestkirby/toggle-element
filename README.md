@@ -33,13 +33,13 @@ Any issues being reported are appreciated, but please understand that provision 
 
 ## About
 
-The elements in this repository were primarily be made for test purposes while walking through the tutorial of how to create custom elements. However, they might be of use to someone else, so I decided to publish them.
+The element in this repository was primarily be made for test purposes while walking through the tutorial of how to create custom elements. However, it might be of use to someone else, so I decided to publish it.
 
 Note that this is not an official YOOtheme product.
 
 ## Hints
 
-While developing on custom elements it might appear to you that changes to the code do not come into effect. If that is the case, try to force a browser refresh while within the Page Builder using \[Ctrl+F5\] (Windows) or \[Cmd+R\] (macOS).
+While developing custom elements it might appear to you that changes to the code do not come into effect. If that is the case, try to force a browser refresh while within the Page Builder using \[Ctrl+F5\] (Windows) or \[Cmd+R\] (macOS).
 
 ## Links
 
