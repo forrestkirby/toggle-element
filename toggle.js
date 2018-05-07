@@ -37,13 +37,20 @@ Builder.types.toggle = {
 
 						// <field_name>: <field_definition>
 						field_btn_label: {
-							label: 'Button label',
+							label: 'Button Label',
+							description: 'Label that will be displayed on the button.',
 							type: 'text'
+						},
+
+						field_icon: {
+							label: 'Button Icon',
+							description: 'Pick an optional icon.',
+							type: 'icon'
 						},
 
 						field_content: {
 							label: 'Content',
-							description: 'Content that will be displayed before the toggle button',
+							description: 'Content that will be displayed before the toggle button.',
 							type: 'editor',
 							attrs: {
 								rows: 10,
@@ -53,7 +60,7 @@ Builder.types.toggle = {
 
 						field_content2: {
 							label: 'Content 2',
-							description: 'Content that will be displayed after the toggle button',
+							description: 'Content that will be displayed after the toggle button.',
 							type: 'editor',
 							attrs: {
 								rows: 10,
@@ -71,7 +78,7 @@ Builder.types.toggle = {
 
 						field_btn_style: {
 							label: 'Button Style',
-							description: 'Set the button style',
+							description: 'Set the button style.',
 							type: 'select',
 							options: {
 								'Default': 'uk-button-default',
@@ -85,7 +92,7 @@ Builder.types.toggle = {
 
 						field_btn_size: {
 							label: 'Button Size',
-							description: 'Set the button size',
+							description: 'Set the button size.',
 							type: 'select',
 							options: {
 								'Default': '',
@@ -94,9 +101,19 @@ Builder.types.toggle = {
 							}
 						},
 
+						field_icon_align: {
+							label: 'Icon Align',
+							description: 'Choose the icon position.',
+							type: 'select',
+							options: {
+								'Left': 'left',
+								'Right': 'right'
+							}
+						},
+
 						field_mode: {
 							label: 'Mode',
-							description: 'Set the trigger behaviour mode',
+							description: 'Set the trigger behaviour mode.',
 							type: 'select',
 							options: {
 								'Click': 'click',
@@ -104,6 +121,20 @@ Builder.types.toggle = {
 								'Click and Hover': 'click, hover',
 								'Media': 'media'
 							}
+						},
+
+						field_media: {
+							label: 'Media',
+							description: 'Set the breakpoint for the media mode.',
+							type: 'select',
+							options: {
+								'Always': 'false',
+								'Small': '@s',
+								'Medium': '@m',
+								'Large': '@l',
+								'X-Large': '@xl'
+							},
+							enable: ({field_mode}) => field_mode == 'media'
 						},
 
 						field_hidden: {
@@ -116,25 +147,13 @@ Builder.types.toggle = {
 						field_cls: {
 							label: 'Cls',
 							description: 'Set the class that is being toggled.',
-							type: 'text'
-						},
-
-						field_media: {
-							label: 'Media',
-							description: 'Set the breakpoint for the media mode',
-							type: 'select',
-							options: {
-								'Always': 'false',
-								'Small': '@s',
-								'Medium': '@m',
-								'Large': '@l',
-								'X-Large': '@xl'
-							}
+							type: 'text',
+							enable: ({field_hidden}) => !field_hidden
 						},
 
 						field_animation: {
 							label: 'Animation',
-							description: 'Set the toggle animation',
+							description: 'Set the toggle animation.',
 							type: 'select',
 							options: {
 								'None': 'false',
@@ -160,8 +179,27 @@ Builder.types.toggle = {
 
 						field_duration: {
 							label: 'Duration',
-							description: 'Set the animation duration in ms',
+							description: 'Set the animation duration in ms.',
 							type: 'number'
+						},
+
+						_general: {
+							label: 'General',
+							type: 'group',
+							fields: {
+								text_align: element.text_align,
+								text_align_breakpoint: element.text_align_breakpoint,
+								text_align_justify_fallback: element.text_align_justify_fallback,
+								maxwidth: element.maxwidth,
+								maxwidth_align: element.maxwidth_align,
+								maxwidth_breakpoint: element.maxwidth_breakpoint,
+								margin: element.margin,
+								margin_remove_top: element.margin_remove_top,
+								margin_remove_bottom: element.margin_remove_bottom,
+								animation: element.animation,
+								_parallax_button: element._parallax_button,
+								visibility: element.visibility
+							}
 						}
 
 					}
@@ -177,11 +215,11 @@ Builder.types.toggle = {
 						id: element.id,
 						class: element.cls,
 						css: {
-							label: "CSS",
-							description: "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>",
-							type: "editor",
-							editor: "code",
-							mode: "css",
+							label: 'CSS',
+							description: 'Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>',
+							type: 'editor',
+							editor: 'code',
+							mode: 'css',
 							attrs: {
 								debounce: 500
 							}
@@ -203,6 +241,7 @@ Builder.types.toggle = {
 				field_content2: 'Hello, world!',
 				field_btn_style: 'uk-button-default',
 				field_btn_size: '',
+				field_icon_align: 'left',
 				field_mode: 'click',
 				field_hidden: false,
 				field_cls: '',
