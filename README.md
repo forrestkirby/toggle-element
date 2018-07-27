@@ -24,7 +24,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 - read and understand the [license.md](https://www.gnu.org/licenses/gpl-3.0)
 - download and unzip the element package
 - create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/child-themes) in your YOOtheme Pro installation and activate the child theme
-- copy all files into the directory `/templates/yootheme_child/builder/toggle/` (Joomla!) or `/wp-content/themes/yootheme-child/builder/toggle/` (WordPress) of your installation whereas _child_ must be the name of your child theme
+- copy all files into the directory `/templates/yootheme_child/builder/toggle/` (Joomla!) or `/wp-content/themes/yootheme-child/builder/toggle/` (WordPress) of your installation whereas *child* must be the name of your child theme
 - WordPress only: edit the file `toggle.js` and change the appearances of `{+$theme}\_child` to `{+$theme}-child`, else the icons will not be displayed
 - access the YOOtheme Pro Page Builder, the custom elements should now be available
 
