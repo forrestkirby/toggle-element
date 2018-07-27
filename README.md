@@ -3,6 +3,7 @@
 A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [Toggle component](https://getuikit.com/docs/toggle)
 
 Copyright (c) 2007-2018 YOOtheme GmbH, yootheme.com
+
 Copyright (c) 2018 [forrestkirby](https://github.com/forrestkirby)
 
 This program is free software: you can redistribute it and/or modify
