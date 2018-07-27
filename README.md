@@ -28,7 +28,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ## Issues
 
-Any issues being reported are appreciated, but please understand that provision of fixes can not be guaranteed in a timely manner.
+Please report issues using the [Github Issue tool](https://github.com/forrestkirby/toggle-element/issues).
 
 ## About
 
