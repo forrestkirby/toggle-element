@@ -2,7 +2,8 @@
 
 A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [Toggle component](https://getuikit.com/docs/toggle)
 
-Copyright (C) 2018 [forrestkirby](https://github.com/forrestkirby)
+Copyright (c) 2007-2018 YOOtheme GmbH, yootheme.com
+Copyright (c) 2018 [forrestkirby](https://github.com/forrestkirby)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,13 +29,11 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ## Issues
 
-Please report issues using the [Github Issue tool](https://github.com/forrestkirby/toggle-element/issues).
+Please report issues using the [Github Issue tool](../../issues).
 
 ## About
 
-The element in this repository was primarily be made for test purposes while walking through the tutorial of how to create custom elements. However, it might be of use to someone else, so I decided to publish it.
-
-Note that this is not an official YOOtheme product.
+Toggle Element is a custom element for YOOtheme Pro developed by [YOOtheme](https://yootheme.com).
 
 ## Hints
 
