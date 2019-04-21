@@ -5,7 +5,7 @@
 	"iconSmall": "${url:images/iconSmall.svg}",
 	"element": true,
 	"container": true,
-	"width": 600,
+	"width": 500,
 	"defaults": {
 		"field_btn_label": "Toggle",
 		"field_content": "Lorem ipsum dolor sit amet",
