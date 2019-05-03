@@ -1,0 +1,251 @@
+{
+	"name": "toggle",
+	"title": "Toggle",
+	"icon": "${url:images/icon.svg}",
+	"iconSmall": "${url:images/iconSmall.svg}",
+	"element": true,
+	"container": true,
+	"width": 500,
+	"defaults": {
+		"field_btn_label": "Toggle",
+		"field_content": "Lorem ipsum dolor sit amet",
+		"field_content2": "Hello, world!",
+		"field_btn_style": "uk-button-default",
+		"field_btn_size": "",
+		"field_icon_align": "left",
+		"field_mode": "click",
+		"field_hidden": false,
+		"field_cls": "",
+		"field_media": "false",
+		"field_animation": "false",
+		"field_duration": 200
+	},
+	"templates": {
+		"render": "./templates/template.php",
+		"content": "./templates/content.php"
+	},
+	"fields": {
+		"field_btn_label": {
+			"label": "Button Label",
+			"description": "Label that will be displayed on the button.",
+			"type": "text"
+		},
+		"field_icon": {
+			"label": "Button Icon",
+			"description": "Pick an optional icon.",
+			"type": "icon"
+		},
+		"field_content": {
+			"label": "Content",
+			"description": "Content that will be displayed before the toggle button.",
+			"type": "editor",
+			"attrs": {
+				"rows": 10,
+				"placeholder": "Enter text..."
+			}
+		},
+		"field_content2": {
+			"label": "Content 2",
+			"description": "Content that will be displayed after the toggle button.",
+			"type": "editor",
+			"attrs": {
+				"rows": 10,
+				"placeholder": "Enter text..."
+			}
+		},
+		"field_btn_style": {
+			"label": "Button Style",
+			"description": "Set the button style.",
+			"type": "select",
+			"options": {
+				"Default": "uk-button-default",
+				"Primary": "uk-button-primary",
+				"Secondary": "uk-button-secondary",
+				"Danger": "uk-button-danger",
+				"Text": "uk-button-text",
+				"Link": "uk-button-link"
+			}
+		},
+		"field_btn_size": {
+			"label": "Button Size",
+			"description": "Set the button size.",
+			"type": "select",
+			"options": {
+				"Default": "",
+				"Small": "uk-button-small",
+				"Large": "uk-button-large"
+			}
+		},
+		"field_icon_align": {
+			"label": "Icon Align",
+			"description": "Choose the icon position.",
+			"type": "select",
+			"options": {
+				"Left": "left",
+				"Right": "right"
+			}
+		},
+		"field_mode": {
+			"label": "Mode",
+			"description": "Set the trigger behaviour mode.",
+			"type": "select",
+			"options": {
+				"Click": "click",
+				"Hover": "hover",
+				"Click and Hover": "click, hover",
+				"Media": "media"
+			}
+		},
+		"field_media": {
+			"label": "Media",
+			"description": "Set the breakpoint for the media mode.",
+			"type": "select",
+			"options": {
+				"Always": "false",
+				"Small": "@s",
+				"Medium": "@m",
+				"Large": "@l",
+				"X-Large": "@xl"
+			},
+			"enable": "field_mode == 'media'"
+		},
+		"field_hidden": {
+			"label": "Show/Hide",
+			"description": "Set the second content to be hidden on load. The toggle event will then show the target instead of hiding it.",
+			"type": "checkbox",
+			"text": "Hide Content 2"
+		},
+		"field_cls": {
+			"label": "Cls",
+			"description": "Set the class that is being toggled.",
+			"type": "text",
+			"enable": "!field_hidden"
+		},
+		"field_animation": {
+			"label": "Animation",
+			"description": "Set the toggle animation.",
+			"type": "select",
+			"options": {
+				"None": "false",
+				"Fade": "uk-animation-fade",
+				"Scale Up": "uk-animation-scale-up",
+				"Scale Down": "uk-animation-scale-down",
+				"Slide Top": "uk-animation-slide-top",
+				"Slide Bottom": "uk-animation-slide-bottom",
+				"Slide Left": "uk-animation-slide-left",
+				"Slide Right": "uk-animation-slide-right",
+				"Slide Top Small": "uk-animation-slide-top-small",
+				"Slide Bottom Small": "uk-animation-slide-bottom-small",
+				"Slide Left Small": "uk-animation-slide-left-small",
+				"Slide Right Small": "uk-animation-slide-right-small",
+				"Slide Top Medium": "uk-animation-slide-top-medium",
+				"Slide Bottom Medium": "uk-animation-slide-bottom-medium",
+				"Slide Left Medium": "uk-animation-slide-left-medium",
+				"Slide Right Medium": "uk-animation-slide-right-medium",
+				"Ken Burns": "uk-animation-kenburns",
+				"Shake": "uk-animation-shake"
+			}
+		},
+		"field_duration": {
+			"label": "Duration",
+			"description": "Set the animation duration in ms.",
+			"type": "number"
+		},
+		"text_align": "${builder:text_align_justify}",
+		"text_align_breakpoint": "${builder:text_align_breakpoint}",
+		"text_align_fallback": "${builder:text_align_justify_fallback}",
+		"maxwidth": "${builder:maxwidth}",
+		"maxwidth_align": "${builder:maxwidth_align}",
+		"maxwidth_breakpoint": "${builder:maxwidth_breakpoint}",
+		"position": "${builder:position}",
+		"position_left": "${builder:position_left}",
+		"position_right": "${builder:position_right}",
+		"position_top": "${builder:position_top}",
+		"position_bottom": "${builder:position_bottom}",
+		"position_z_index": "${builder:position_z_index}",
+		"margin": "${builder:margin}",
+		"margin": "${builder:margin}",
+		"margin_remove_top": "${builder:margin_remove_top}",
+		"margin_remove_bottom": "${builder:margin_remove_bottom}",
+		"animation": "${builder:animation}",
+		"_parallax_button": "${builder:_parallax_button}",
+		"visibility": "${builder:visibility}",
+		"name": "${builder:name}",
+		"status": "${builder:status}",
+		"id": "${builder:id}",
+		"class": "${builder:cls}",
+		"css": {
+			"label": "CSS",
+			"description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>",
+			"type": "editor",
+			"editor": "code",
+			"mode": "css",
+			"attrs": {
+				"debounce": 500
+			}
+		}
+	},
+	"fieldset": {
+		"default": {
+			"type": "tabs",
+			"fields": [
+				{
+					"title": "Content",
+					"fields": [
+						"field_btn_label",
+						"field_icon",
+						"field_content",
+						"field_content2"
+					]
+				},
+				{
+					"title": "Settings",
+					"fields": [
+						"field_btn_style",
+						"field_btn_size",
+						"field_icon_align",
+						"field_mode",
+						"field_media",
+						"field_hidden",
+						"field_cls",
+						"field_animation",
+						"field_duration",
+						{
+							"label": "General",
+							"type": "group",
+							"fields": [
+								"text_align",
+								"text_align_breakpoint",
+								"text_align_justify_fallback",
+								"maxwidth",
+								"maxwidth_align",
+								"maxwidth_breakpoint",
+								"position",
+								"position_left",
+								"position_right",
+								"position_top",
+								"position_bottom",
+								"position_z_index",
+								"margin",
+								"margin_remove_top",
+								"margin_remove_bottom",
+								"animation",
+								"_parallax_button",
+								"visibility"
+							]
+						}
+					]
+				},
+				{
+					"title": "Advanced",
+					"fields": [
+						"name",
+						"id",
+						"class",
+						"css"
+					]
+				}
+			]
+		}
+	}
+}
