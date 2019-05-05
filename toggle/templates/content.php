@@ -1,6 +1,6 @@
 <div>
 
-	<div><?= $props['field_content'] ?></div>
-	<div><?= $props['field_content2'] ?></div>
+	<div><?= $props['content'] ?></div>
+	<div><?= $props['content2'] ?></div>
 
 </div>
