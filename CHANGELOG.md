@@ -2,6 +2,8 @@
 
 ## 0.5
 - Added position settings from [YOOtheme Pro 1.20 changes](https://yootheme.com/blog/)
+- Changed field names
+- Changed default to hide content2
 
 ## 0.4
 - Changed structure to reflect [YOOtheme Pro 1.18 changes](https://yootheme.com/blog/2019/01/31/yootheme-pro-1.18-released)
