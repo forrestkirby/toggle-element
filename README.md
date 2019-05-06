@@ -40,6 +40,7 @@ Toggle Element is a custom element for YOOtheme Pro developed by [YOOtheme](http
 - [YOOtheme Support](https://yootheme.com/support)
 - [Progress Element](https://github.com/forrestkirby/progress-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
+- [Counter Element](https://github.com/forrestkirby/counter-element)
 
 ## Screenshots
 
