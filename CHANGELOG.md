@@ -1,7 +1,7 @@
 # Toggle Element Changelog
 
 ## 0.5
-- Added position settings from [YOOtheme Pro 1.20 changes](https://yootheme.com/blog/)
+- Added position settings from [YOOtheme Pro 1.20 changes](https://yootheme.com/blog/2019/05/17/yootheme-pro-1.20-released)
 - Changed field names
 - Changed default to hide content2
 
