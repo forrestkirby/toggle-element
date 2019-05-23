@@ -1,5 +1,25 @@
 # Toggle Element Changelog
 
+## 1.0
+
+### Changed
+
+- custom prefix to prevent conflicts with third party elements
+
+## 0.6
+
+### Added
+
+- target option
+- queued option
+- more toggle modes
+- advanced animation option
+
+### Fixed
+
+- duplicate `animation` property
+- status option not shown in advanced settings
+
 ## 0.5
 
 ### Added
