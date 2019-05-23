@@ -6,10 +6,11 @@ $el = $this->el('div', [
 
 ]);
 
-if ($props['target'] == 'false' || $props['target'] == '') {
+if ($props['content2'] || $props['target'] == 'false' || $props['target'] == '') {
 	$uniqid = uniqid('toggle-');
 	$target = '#' . $uniqid;
 } else {
+	$uniqid = '';
 	$target = $props['target'];
 }
 $ishidden = $props['hidden'] ? 'hidden' : '' ;
@@ -21,6 +22,7 @@ if ($props['toggle_animation_use_advanced']) {
 } else {
 	$animation = 'uk-animation-' . $props['toggle_animation'];
 }
+($props['queued']) ? $queued = 'true' : $queued = 'false';
 
 ?>
 
@@ -30,7 +32,7 @@ if ($props['toggle_animation_use_advanced']) {
 		<div class="uk-margin"><?= $props['content'] ?></div>
 	<?php endif ?>
 	<div class="uk-margin">
-		<button class="uk-button <?= $props['btn_style'] ?> <?= $props['btn_size'] ?>" type="button" uk-toggle="target: <?= $target ?>; mode: <?= $props['mode'] ?>; cls: <?= $cls; ?>; media: <?= $props['media'] ?>; animation: <?= $animation ?>; duration: <?= $props['duration'] ?>; queued: <?= $props['queued'] ?>">
+		<button class="uk-button <?= $props['btn_style'] ?> <?= $props['btn_size'] ?>" type="button" uk-toggle="target: <?= $target ?>; mode: <?= $props['mode'] ?>; cls: <?= $cls; ?>; media: <?= $props['media'] ?>; animation: <?= $animation ?>; duration: <?= $props['duration'] ?>; queued: <?= $queued ?>">
 
 			<?php if ($props['icon_align'] == 'left' && $props['icon']) : ?>
 				<span uk-icon="<?= $props['icon'] ?>"></span>
@@ -44,8 +46,8 @@ if ($props['toggle_animation_use_advanced']) {
 
 			</button>
 	</div>
-	<?php if ($props['content']) : ?>
-		<div id="<?= $uniqid; ?>" class="uk-margin" <?= $ishidden; ?>><?= $props['content2'] ?></div>
+	<?php if ($props['content2']) : ?>
+		<div <?= ($uniqid != '') ? 'id="' . $uniqid . '"' : '' ?> class="uk-margin" <?= $ishidden; ?>><?= $props['content2'] ?></div>
 	<?php endif ?>
 
 </div>
