@@ -14,7 +14,7 @@ if ($props['content2'] || $props['target'] == 'false' || $props['target'] == '')
 	$target = $props['target'];
 }
 $ishidden = $props['hidden'] ? 'hidden' : '' ;
-$cls = ( $props['hidden'] || $props['cls'] == '' ) ? 'false' : $props['cls'];
+$cls = ( $props['hidden'] && $props['content2'] || $props['cls'] == '' ) ? 'false' : $props['cls'];
 if ($props['toggle_animation_use_advanced']) {
 	$animation = $props['toggle_animation_advanced'];
 } elseif ($props['toggle_animation'] == 'false') {
