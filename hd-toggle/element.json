@@ -37,19 +37,22 @@
 		{
 			"label": "Button Label",
 			"description": "Label that will be displayed on the button.",
-			"type": "text"
+			"type": "text",
+			"source": true
 		},
 		"icon":
 		{
 			"label": "Button Icon",
 			"description": "Pick an optional icon.",
-			"type": "icon"
+			"type": "icon",
+			"source": true
 		},
 		"content":
 		{
 			"label": "Content",
 			"description": "Content that will be displayed before the toggle button.",
-			"type": "editor",
+			"type": "editor",,
+			"source": true
 			"attrs":
 			{
 				"rows": 10,
@@ -60,7 +63,8 @@
 		{
 			"label": "Content 2",
 			"description": "Content that will be displayed after the toggle button.",
-			"type": "editor",
+			"type": "editor",,
+			"source": true
 			"attrs":
 			{
 				"rows": 10,
@@ -206,7 +210,8 @@
 		{
 			"label": "Duration",
 			"description": "Set the animation duration in ms.",
-			"type": "number",
+			"type": "number",,
+			"source": true
 			"enable": "!hidden || !content2"
 		},
 		"queued":
@@ -238,6 +243,7 @@
 		"visibility": "${builder.visibility}",
 		"name": "${builder.name}",
 		"status": "${builder.status}",
+		"source": "${builder.source}",
 		"id": "${builder.id}",
 		"class": "${builder.cls}",
 		"css":
