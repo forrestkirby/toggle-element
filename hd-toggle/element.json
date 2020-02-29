@@ -51,8 +51,8 @@
 		{
 			"label": "Content",
 			"description": "Content that will be displayed before the toggle button.",
-			"type": "editor",,
-			"source": true
+			"type": "editor",
+			"source": true,
 			"attrs":
 			{
 				"rows": 10,
@@ -63,8 +63,8 @@
 		{
 			"label": "Content 2",
 			"description": "Content that will be displayed after the toggle button.",
-			"type": "editor",,
-			"source": true
+			"type": "editor",
+			"source": true,
 			"attrs":
 			{
 				"rows": 10,
@@ -210,8 +210,8 @@
 		{
 			"label": "Duration",
 			"description": "Set the animation duration in ms.",
-			"type": "number",,
-			"source": true
+			"type": "number",
+			"source": true,
 			"enable": "!hidden || !content2"
 		},
 		"queued":
