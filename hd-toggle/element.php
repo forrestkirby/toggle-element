@@ -9,7 +9,7 @@ return [
         'render' => function ($node) {
 
             // Don't render element if content fields are empty
-            return ($node->props['btn_label'] || $node->props['icon']) && ($node->props['content'] || $node->props['content2']);
+            return ($node->props['btn_label'] || $node->props['icon'] || $node->props['btn_label2'] || $node->props['icon2']) && ($node->props['content'] || $node->props['content2']);
 
         },
 
