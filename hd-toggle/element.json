@@ -10,6 +10,7 @@
 	"defaults":
 	{
 		"btn_label": "Toggle",
+		"btn_label2": "UnToggle",
 		"content": "Lorem ipsum dolor sit amet",
 		"content2": "Hello, world!",
 		"btn_style": "uk-button-default",
@@ -40,10 +41,26 @@
 			"type": "text",
 			"source": true
 		},
+		
+		"btn_label2":
+		{
+			"label": "Button Label Toggled",
+			"description": "Label that will be displayed on the button once it's active.",
+			"type": "text",
+			"source": true
+		},
 		"icon":
 		{
 			"label": "Button Icon",
 			"description": "Pick an optional icon.",
+			"type": "icon",
+			"source": true
+		},
+		
+		"icon2":
+		{
+			"label": "Button Icon Toggled",
+			"description": "Pick an optional icon for the active state.",
 			"type": "icon",
 			"source": true
 		},
@@ -270,7 +287,9 @@
 					"title": "Content",
 					"fields": [
 						"btn_label",
+						"btn_label2",
 						"icon",
+						"icon2",
 						"content",
 						"content2"
 					]
