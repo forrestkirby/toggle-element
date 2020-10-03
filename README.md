@@ -20,7 +20,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 ## Installation
 
 - download and unzip the element package
-- create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/child-themes) in your YOOtheme Pro installation and activate the child theme
+- create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/developers-child-themes) in your YOOtheme Pro installation and activate the child theme
 - copy the complete folder `hd-toggle` into the directory `/templates/yootheme_child/builder/` (Joomla!) or `/wp-content/themes/yootheme-child/builder/` (WordPress) of your installation while *child* must be the name of your child theme
 - access the YOOtheme Pro Page Builder, the custom elements should now be available
 
@@ -35,8 +35,8 @@ Toggle Element is a custom element for YOOtheme Pro developed by [YOOtheme](http
 ## Links
 
 - [YOOtheme Pro Documentation: Introduction](https://yootheme.com/support/yootheme-pro/joomla/introduction)
-- [YOOtheme Pro Documentation: Child Themes](https://yootheme.com/support/yootheme-pro/joomla/child-themes)
-- [YOOtheme Pro Documentation: Custom Elements](https://yootheme.com/support/yootheme-pro/joomla/custom-elements)
+- [YOOtheme Pro Documentation: Child Themes](https://yootheme.com/support/yootheme-pro/joomla/developers-child-themes)
+- [YOOtheme Pro Documentation: Custom Elements](https://yootheme.com/support/yootheme-pro/joomla/developers-elements)
 - [YOOtheme Support](https://yootheme.com/support)
 - [Progress Element](https://github.com/forrestkirby/progress-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
