@@ -42,9 +42,10 @@ Toggle Element is a custom element for YOOtheme Pro developed by [YOOtheme](http
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
 - [Counter Element](https://github.com/forrestkirby/counter-element)
 - [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
+- [Image Comparison Element](https://github.com/forrestkirby/image-comparison-element)
 
 ## Screenshots
 
-![Image](https://pionte.ch/yootheme/max/images/tutorial-toggle-2.jpg)
+![Image](https://herzog-dupont.de/images/tutorials/tutorial-toggle-2.jpg)
 
-![Image](https://pionte.ch/yootheme/max/images/tutorial-toggle-3.jpg)
+![Image](https://herzog-dupont.de/images/tutorials/tutorial-toggle-3.jpg)
