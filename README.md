@@ -46,6 +46,6 @@ Toggle Element is a custom element for YOOtheme Pro developed by [YOOtheme](http
 
 ## Screenshots
 
-![Image](https://herzog-dupont.de/images/tutorials/tutorial-toggle-2.jpg)
+![](https://herzog-dupont.de/images/tutorials/tutorial-toggle-2.jpg)
 
-![Image](https://herzog-dupont.de/images/tutorials/tutorial-toggle-3.jpg)
+![](https://herzog-dupont.de/images/tutorials/tutorial-toggle-3.jpg)
