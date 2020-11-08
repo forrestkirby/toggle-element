@@ -1,5 +1,11 @@
 # Toggle Element Changelog
 
+## 2.3.15
+
+- enable conditions for class, animation and queued options
+
+### Changed
+
 ## 2.1.0-beta.1
 
 ### Added
