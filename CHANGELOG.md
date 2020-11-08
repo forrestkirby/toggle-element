@@ -2,7 +2,7 @@
 
 ## 2.3.15
 
-- enable conditions for class, animation and queued options
+- enable conditions for animation and queued options
 
 ### Changed
 
