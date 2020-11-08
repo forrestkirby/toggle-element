@@ -160,7 +160,7 @@
 			"label": "Cls",
 			"description": "The class that is being toggled. Defaults to the `hidden` attribute.",
 			"type": "text",
-			"enable": "!content2"
+			"enable": "!content2 || !hidden"
 		},
 		"toggle_animation":
 		{
