@@ -160,7 +160,7 @@
 			"label": "Cls",
 			"description": "The class that is being toggled. Defaults to the `hidden` attribute.",
 			"type": "text",
-			"enable": "!hidden || !content2"
+			"enable": "!content2"
 		},
 		"toggle_animation":
 		{
@@ -190,21 +190,20 @@
 				"Shake": "shake",
 				"Stroke": "stroke"
 			},
-			"enable": "!hidden && !toggle_animation_use_advanced || !content2 && !toggle_animation_use_advanced"
+			"enable": "!toggle_animation_use_advanced"
 		},
 		"toggle_animation_use_advanced":
 		{
 			"label": "Use Advanced Toggle Animation",
 			"description": "Check to activate field for advanced toggle animations.",
-			"type": "checkbox",
-			"enable": "!hidden || !content2"
+			"type": "checkbox"
 		},
 		"toggle_animation_advanced":
 		{
 			"label": "Advanced Toggle Animation",
 			"description": "Space separated names of <a href=\"https://getuikit.com/docs/animation\">animations</a> to use, comma separated for out animation.",
 			"type": "text",
-			"enable": "!hidden && toggle_animation_use_advanced || !content2 && toggle_animation_use_advanced"
+			"enable": "toggle_animation_use_advanced"
 		},
 		"duration":
 		{
@@ -212,14 +211,14 @@
 			"description": "Set the animation duration in ms.",
 			"type": "number",
 			"source": true,
-			"enable": "!hidden || !content2"
+			"enable": "toggle_animation != 'false' || (toggle_animation_use_advanced && toggle_animation_advanced != 'false')"
 		},
 		"queued":
 		{
 			"label": "Queued",
 			"description": "Toggle the targets successively.",
 			"type": "checkbox",
-			"enable": "!hidden || !content2"
+			"enable": "!content2 && target != 'false'"
 		},
 		"position": "${builder.position}",
 		"position_left": "${builder.position_left}",
