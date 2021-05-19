@@ -1,5 +1,11 @@
 # Toggle Element Changelog
 
+## 2.4.15
+
+### Added
+
+- full width option for button
+
 ## 2.3.15
 
 - enable conditions for animation and queued options
